@@ -71,8 +71,8 @@ const DataTable = () => {
                                                                                      <tr>
                                                                                           <td>{i.id}</td>
                                                                                           <td>{i.title}</td>
-                                                                                          <td>{i.blog}</td>
-                                                                                          <td><img src={i.img} alt="" /></td>
+                                                                                          <td>{i.description}</td>
+                                                                                          <td><img src={i.frame} alt="" /></td>
                                                                                           <td>{i.status}</td>
                                                                                      </tr>
                                                                                 </>
