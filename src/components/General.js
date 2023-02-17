@@ -5,14 +5,13 @@ import Footer from "./Footer"
 import Header from "./Header"
 
 const General = () => {
-     const [status, setstatus] = useState("")
 
      const handleSubmit = () => {
           const form = document.getElementById('form')
           const title = form.elements[0].value
           const desp = form.elements[1].value
           const s = window.localStorage.getItem("cnt")
-          let img =  form.img.value;
+          let img = form.img.value;
           const fdata = new FormData()
           fdata.append("add", "blogs")
           fdata.append("title", title)
@@ -52,7 +51,7 @@ const General = () => {
 
      return (
           <>
-               <Header/>
+               <Header />
                <SideBar />
                <div className="content-wrapper">
                     <section className="content-header">
@@ -75,7 +74,7 @@ const General = () => {
                               <div className="row">
                                    <div className="col-md-6">
                                         <div className="card card-primary">
-                                             <form method="post" onSubmit={handleSubmit} id="form">
+                                             <form id="form">
                                                   <div className="card-body">
                                                        <div className="form-group">
                                                             <label htmlFor="exampleInputEmail1">Title</label>
@@ -103,7 +102,7 @@ const General = () => {
                                                        </div>
                                                   </div>
                                                   <div className="card-footer">
-                                                       <button type="submit" className="btn btn-primary">Submit</button>
+                                                       <button onClick={handleSubmit} type="submit" className="btn btn-primary">Submit</button>
                                                   </div>
                                              </form>
                                         </div>
