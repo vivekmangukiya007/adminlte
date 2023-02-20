@@ -4,7 +4,6 @@ import Admin from './components/Admin-Panel';
 import Login from './components/Login';
 import General from './components/General';
 import DataTable from './components/DataTable';
-import Index from './components/coffeeBlogPages/Index';
 
 
 function App() {
